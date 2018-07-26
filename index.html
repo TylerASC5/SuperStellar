@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib\js\main.css">
+    <script src="\lib\js\main.js"></script>
+    <title>What's up</title>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h2 class="w3-center">Cuphead</h2>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="http://www.mobygames.com/images/shots/l/907242-cuphead-windows-screenshot-phantom-train-phase-two.png" style="width:100%">
+    <img class="mySlides" src="https://killapenguin.com/227/gallery/screenshots/full/cuphead/cuphead-0015.jpg"style="width:100%">
+    <img class="mySlides" src="http://www.mobygames.com/images/shots/l/905900-cuphead-windows-screenshot-time-to-be-a-man-and-pull-these.png"style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="About">
+<p>Cuphead. Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with the same techniques of the era, i.e. traditional hand drawn cel animation, watercolor backgrounds, and original jazz recordings.
+</p>
+</div>
+</body>
+</html>
